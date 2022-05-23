@@ -9,12 +9,14 @@
 }
 
 .checkoutproduct__info > button{
-    background: #f0c14b;
+    background: #694bf0;
     border: 1px solid;
     margin-top: 10px;
-    color: #111;
-    border-color: #a88734 #9c7e31 #846a29;
+    border-color: #694bf0 #694bf0 #694bf0;
     cursor: pointer;
+   
+    border-radius: 2px;
+    color:white;
 }
 
 .checkoutproduct__image{

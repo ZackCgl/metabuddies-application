@@ -6,6 +6,7 @@ import Header from './Header';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import Payment from './Payment';
 
 function Navbar() {
 
@@ -40,6 +41,7 @@ function Navbar() {
         <Routes>
           <Route path="/" element={[<Header />,<App />]}></Route>
           <Route path="/checkout" element={[<Header />,<CheckoutApp />]}></Route>
+          <Route path="/payment" element={[<Header />,<Payment />]}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
      </Router>

@@ -2,7 +2,7 @@
 margin-top: 20px;
 margin-bottom: 20px;
 object-fit: contain;
-width: 100px;
+width: 150px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -12,7 +12,7 @@ margin-right: auto;
     flex-direction: column;
     align-items: center;
     height: 100vw;
-    background-color: white;
+    background-color: rgba(129, 86, 127, 0.384);
 }
 
 .login__container{
@@ -47,10 +47,10 @@ margin-right: auto;
 }
 
 .login__signinbutton{
-    background: #f0c14b;
+    background: #694bf0;
     border: 1px solid;
     margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
+    border-color: #694bf0 #694bf0 #694bf0;
     cursor: pointer;
     height: 30px;
     border-radius: 2px;

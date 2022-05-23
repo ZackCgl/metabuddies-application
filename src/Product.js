@@ -34,7 +34,7 @@ const [{ basket }, dispatch] = useStateValue()
             </p>
             <div className='product__rating'>
             {Array(rating).fill().map((_, i) => (
-              <p>O</p>
+              <p>⭐</p>
             ))}
             
             
@@ -42,7 +42,7 @@ const [{ basket }, dispatch] = useStateValue()
         </div>
         
         <img src={image} alt="" />
-        <button onClick={addToBasket}>Click me</button>
+        <button onClick={addToBasket}>Add to basket</button>
     </motion.div>
   )
 }

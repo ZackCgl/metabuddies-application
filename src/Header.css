@@ -12,7 +12,7 @@
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
-    margin-top: 18px;
+    margin-top: 5px;
 }
 
 .header__search{
@@ -32,7 +32,14 @@
 .header__searchIcon{
     padding: 5px;
     height: 22px !important;
-    background-color: #cd9042;
+    background: #694bf0;
+    border: 1px solid;
+    
+    border-color: #694bf0 #694bf0 #694bf0;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 2px;
+    color:white;
 }
 
 .header__nav{

@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <div className='header'>
-        <Link to="/"><img className='header__logo' src='https://www.seekpng.com/png/full/18-181177_amazon-logo-png-magnetic-rinse-cup-with-toothbrush.png' alt='' /></Link>
+        <Link to="/"><img className='header__logo' src='http://meta-buddies.io/assets/images/logo.png' alt='' /></Link>
             <div className='header__search'>
                 <input className='header__searchInput' type="text">
                

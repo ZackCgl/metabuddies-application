@@ -17,7 +17,6 @@ function Login() {
         .then((auth) => {
             if(auth){
                 navigate('/')
-                alert(`Welcome ${email}`)
             }
         })
         .catch(error => alert(error.message))
@@ -36,7 +35,7 @@ function Login() {
     }
   return (
     <div className="login">
-    <Link to="/"><img className='login__logo' src='https://i.pinimg.com/originals/af/5b/7f/af5b7fa2209bcc7a292823cb213f5e9d.png' alt='' /></Link>
+    <Link to="/"><img className='login__logo' src='http://meta-buddies.io/assets/images/logo.png' alt='' /></Link>
     <div className="login__container">
         <h1>Sign-in</h1>
         <form>
@@ -46,9 +45,9 @@ function Login() {
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
             <button type="submit" onClick={signIn} className="login__signinbutton">Sign in</button>
         </form>
-        <p>By signing in you agrre to amazon's terms and conditions.etc etc etc lorum impson thats halleo 
-        world man can yoiu makew it more retarded for us people :D</p>
-        <button className="login__signinbutton" onClick={register}>Create Amazon Account</button>
+        <p>By signing in you agree to Meta-buddies terms and conditions. 
+        </p>
+        <button className="login__signinbutton" onClick={register}>Create Meta-Buddies</button>
     </div>
     </div>
   )

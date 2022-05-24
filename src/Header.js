@@ -44,14 +44,16 @@ function Header() {
                      & Orders
                     </span>
                   </div>
+                  <Link to="/platform">
                   <div className='header__option'>
                   <span className='header__optionLineOne'>
-                      Your
+                      NFT
                     </span>
                     <span className='header__optionLineTwo'>
-                      Prime
+                      Platform
                     </span>
                   </div>
+                  </Link>
                   <div className='header__optionBasket'>
                     <Link to="/checkout"><ShoppingBasket /></Link>
                     <span className='header__optionLineTwo header__basketCount'>

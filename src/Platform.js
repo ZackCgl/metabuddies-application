@@ -1147,7 +1147,7 @@ const web3Modal = new Web3Modal({
  				
 
   			<div className="row items mt-3">
-  			<div className="ml-3 mr-3" style={{display: "inline-grid",gridTemplateColumns: "repeat(4, 5fr)",columnGap: "10px"}}>
+  			<div className="ml-3 mr-3 mb-3" style={{display: "inline-grid",gridTemplateColumns: "repeat(4, 5fr)",columnGap: "10px"}}>
   				{nftdata.map((result, i )=> {
 	    		async function stakeit() {
 				vaultcontract.methods.stake([result.token_id]).send({from: account});

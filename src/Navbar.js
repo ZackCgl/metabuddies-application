@@ -9,7 +9,8 @@ import { auth } from './firebase';
 import Payment from './Payment';
 import Platform from "./Platform"
 import {loadStripe} from '@stripe/stripe-js'
-import {Elements} from '@stripe/react-stripe-js'
+import {Elements} from '@stripe/react-stripe-js';
+import Orders from './Orders';
 
 
 
@@ -48,6 +49,7 @@ function Navbar() {
         <Routes>
           <Route path="/" element={[<Header />,<App />]}></Route>
           <Route path="/checkout" element={[<Header />,<CheckoutApp />]}></Route>
+          <Route path='/orders' element={[<Header />,<Orders />]}></Route>
           <Route path="/payment" 
           element={[<Header />,
           <Elements stripe={promise}>

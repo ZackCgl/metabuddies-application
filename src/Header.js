@@ -21,10 +21,7 @@ function Header() {
     <div className='header'>
         <Link to="/"><img className='header__logo' src='http://meta-buddies.io/assets/images/logo.png' alt='' /></Link>
             <div className='header__search'>
-                <input className='header__searchInput' type="text">
-               
-                </input>
-                <SearchIcon className='header__searchIcon'/>
+                
             </div>
                 <div className='header__nav'>
                 <Link to={!user && "/login"}>
@@ -36,7 +33,7 @@ function Header() {
                     </span>
                   </div>
                   </Link>
-                  <div className='header__option'>
+                  <Link to="/orders"><div className='header__option'>
                   <span className='header__optionLineOne'>
                       Returns
                     </span>
@@ -44,6 +41,7 @@ function Header() {
                      & Orders
                     </span>
                   </div>
+                  </Link>
                   <Link to="/platform">
                   <div className='header__option'>
                   <span className='header__optionLineOne'>

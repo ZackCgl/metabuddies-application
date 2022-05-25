@@ -8,8 +8,14 @@ import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 import Payment from './Payment';
 import Platform from "./Platform"
+import {loadStripe} from '@stripe/stripe-js'
+import {Elements} from '@stripe/react-stripe-js'
+
+
 
 function Navbar() {
+
+  const promise = loadStripe('pk_test_51L34nrJ0Tu9paWkWZKatZuci1OZz9VeqIh4uCnavYGPZFkJkvBfHtp8UrgmRZBcGz5z5Xb3GS2dxM5VtJtGU3RFx00MUrjoIq9');
 
   const [{}, dispatch] = useStateValue();
   useEffect(() =>{
@@ -42,7 +48,11 @@ function Navbar() {
         <Routes>
           <Route path="/" element={[<Header />,<App />]}></Route>
           <Route path="/checkout" element={[<Header />,<CheckoutApp />]}></Route>
-          <Route path="/payment" element={[<Header />,<Payment />]}></Route>
+          <Route path="/payment" 
+          element={[<Header />,
+          <Elements stripe={promise}>
+          <Payment />
+          </Elements>]}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/platform" element={ [<Header />,<Platform />]}></Route>
         </Routes>
